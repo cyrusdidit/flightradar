@@ -1,0 +1,6 @@
+@import "leaflet/dist/leaflet.css";
+
+#map {
+  height: calc(100vh - 64px);
+  width: 100%;
+}
