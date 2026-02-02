@@ -13,7 +13,8 @@ class PlaneController extends Controller
             $res = Http::timeout(12)
                 ->acceptJson()
                 ->get('https://deskplan.lv/flight/all.json');
-                        #https://opensky-network.org/api/states/all (this is actual link but it didnt work)
+                        #https://opensky-network.org/api/states/all 
+                        // (this is real link but it nono work)
             if (!$res->ok()) {
                 return response()->json([
                     'time' => time(),
